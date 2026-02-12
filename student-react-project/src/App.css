@@ -1,0 +1,41 @@
+.text-center{
+  text-align: center;
+}
+.ulStyle{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 500px;
+}
+.green-color{
+  color: green;
+}
+.blue-color{
+  color: blue;
+}
+.btn{
+  padding: 5px;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  width: 60px;
+  border: 1px solid white;
+}
+.btn-lg{
+  padding: 5px;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  border: 1px solid white;
+}
+.red-bg{
+  background-color: red;
+}
+.green-bg{
+  background-color: green;
+}
+.underline{
+  text-decoration: underline;
+}
+
