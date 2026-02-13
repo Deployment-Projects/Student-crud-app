@@ -16,8 +16,8 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowedOrigins(List.of(
-//                "https://decormoments.shop"
-                "http://localhost:5174"
+                "https://decormoments.shop"
+//                "http://localhost:5174"
         ));
 
         config.setAllowedMethods(List.of(

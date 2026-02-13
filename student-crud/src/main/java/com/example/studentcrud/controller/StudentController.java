@@ -11,7 +11,7 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:5174")
 @RestController
 //Enable only in case of deployment
-//@RequestMapping({"/api", "/api/"})
+@RequestMapping({"/api", "/api/"})
 public class StudentController {
 
     private final StudentService service;
