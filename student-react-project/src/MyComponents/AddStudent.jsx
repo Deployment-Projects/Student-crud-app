@@ -33,7 +33,7 @@ const AddStudent = () => {
 
   return (
     <div className='text-center'>
-      <h2 >Add Student page</h2>
+      <h2 >Add Student</h2>
       <form>
         <label htmlFor='name'>Name: </label>
         <input type='text' id='name' onChange={(e)=>setName(e.target.value)} placeholder='Enter Name'/><br/><br/>
