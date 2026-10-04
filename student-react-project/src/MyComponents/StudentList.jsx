@@ -11,7 +11,7 @@ const StudentList = () => {
      //for localhost
     // let url = "http://localhost:8080/";
 
-    //for deployment
+    //for deployment and docker(locally)
     let url = "/api/";
 
     useEffect(()=>{

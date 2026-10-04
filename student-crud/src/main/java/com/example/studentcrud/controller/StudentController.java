@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5174")
+// @CrossOrigin(origins = "http://localhost:5174")
 @RestController
-//Enable only in case of deployment
-@RequestMapping({"/api", "/api/"})
+// Enable only in case of deployment
+@RequestMapping({ "/api", "/api/" })
 public class StudentController {
 
     private final StudentService service;
@@ -38,8 +38,7 @@ public class StudentController {
     @PutMapping("/{id}")
     public ResponseEntity<Student> update(
             @PathVariable Long id,
-            @Validated @RequestBody Student student
-    ) {
+            @Validated @RequestBody Student student) {
         return ResponseEntity.ok(service.update(id, student));
     }
 
