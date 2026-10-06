@@ -54,7 +54,7 @@ const StudentList = () => {
                     <li>Email: {student.email}</li>
                     <li>Age: {student.age}</li>
                     <br/>
-                    <button onClick={()=>handleDelete(student.id)} style={{marginRight:'5px'}} className='btn red-bg'>Delete</button>
+                    <button onClick={()=>handleDelete(student.id)} style={{marginRight:'6px'}} className='btn red-bg'>Delete</button>
                     
                     <button onClick={()=>handleEdit(student.id)} className='btn green-bg'>Edit</button>
 
