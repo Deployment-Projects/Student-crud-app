@@ -14,7 +14,9 @@ const AddStudent = () => {
     // let url = "http://localhost:8080/";
 
     //for deployment and docker(locally)
-    let url = "/api/";
+    //let url = "/api/";
+
+    let url = import.meta.env.VITE_API_URL || "/api/";
 
     const handleAddStudent = async(e) =>{
       e.preventDefault();  

@@ -136,4 +136,31 @@ Once all changes are done, push your code and run on your EC2 instance:
 docker-compose up --build
 ```
 
-App is live at → https://your-domain.com 🚀
+App is live at → https://decormoments.shop 🚀
+
+For running locally with docker ------------------------------------
+docker compose -f docker-compose.dev.yml up -d
+docker ps
+Then start Spring Boot from your IDE:
+Spring Boot
+↓
+localhost:8080
+How we'll activate it locally
+When you run Spring Boot locally, we'll explicitly use:
+.\mvnw.cmd spring-boot:run "-Dspring-boot.run.profiles=local"
+
+Then start React:
+cd student-react-project
+npm install
+npm run dev
+
+Remember we are using docker postgresql database not the local machine database
+start postgresql by 
+docker compose -f docker-compose.dev.yml up
+
+start postgresql by
+docker compose -f docker-compose.dev.yml down
+
+
+
+

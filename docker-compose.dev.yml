@@ -1,0 +1,16 @@
+services:
+
+  postgresdb:
+    image: postgres:16
+    container_name: student-postgres-dev
+    environment:
+      POSTGRES_DB: docker-demo-db
+      POSTGRES_USER: lucky
+      POSTGRES_PASSWORD: papa
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata-dev:/var/lib/postgresql/data
+
+volumes:
+  pgdata-dev:

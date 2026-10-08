@@ -18,7 +18,9 @@ const EditStudent = () => {
     // let url = "http://localhost:8080/";
 
     //for deployment and docker(locally)
-    let url = "/api/";
+    //let url = "/api/";
+
+    let url = import.meta.env.VITE_API_URL || "/api/";
 
     const getStudent = async(id) =>{
         let response = await fetch(url + id);

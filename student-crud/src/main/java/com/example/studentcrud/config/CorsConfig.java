@@ -16,8 +16,9 @@ public class CorsConfig {
                 CorsConfiguration config = new CorsConfiguration();
 
                 config.setAllowedOrigins(List.of(
-                                "https://decormoments.shop"
-                // "http://localhost:5174", // Vite dev server
+                                "https://decormoments.shop",
+                 "http://localhost:5174"
+                        // Vite dev server
                 // "http://localhost:3000" // Docker / Nginx
                 ));
 

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
        <ul className='ulStyle'>
-        <li ><NavLink to={"/"}>Studens</NavLink></li>
+        <li ><NavLink to={"/"}>Students</NavLink></li>
         <li ><NavLink to={"/addStudent"}>Add Student</NavLink></li>
       </ul>
     </div>
