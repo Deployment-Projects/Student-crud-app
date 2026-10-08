@@ -46,7 +46,7 @@ const StudentList = () => {
 
   return (
     <div>
-      <h2 className='text-center underline green-color'>Student List</h2>
+      <h2 className='text-center underline green-color'>List of Students</h2>
         {
             !loading?
             studentData && studentData.map((student)=>(

@@ -161,6 +161,31 @@ docker compose -f docker-compose.dev.yml up
 start postgresql by
 docker compose -f docker-compose.dev.yml down
 
+Files added for seperating local and production environment
+1. application-local.properties. (for letting know to springboot that we are using local or production env)
+2. docker-compose.dev.yml(for using docker postgresql which is for local development)
+3. Adding two files .env.development and .env.production for react project. 
+4. In pom.xml we used timezone=Asia/Kolkata configuration inside plugin. 
 
+How to differentiate between local environment and production environment in this project.?
+1. For spring boot - if we are using local profile which is active during command , we let know spring boot that we are using 
+local environment and then both files application.properties and application-local.properties will be used.
+and the command is as : .\mvnw.cmd spring-boot:run "-Dspring-boot.run.profiles=local"
+if we dont use local profile that means spring boot will identify that only application.property file will be used and hence
+its a production environment. 
+2. For react to know: when we use 'npm run dev' then its local environment
+if we use npm run build then its production environment.
+3. For docker compose, we explicity tell:
+   Local development
+   You explicitly run:
+   docker compose -f docker-compose.dev.yml up -d
+
+   Production / EC2
+   You run:
+   docker compose -f docker-compose.yml up -d
+
+When the production code will change
+Local Development → develop branch → Local testing (Docker Compose Dev)
+Production Release → merge develop branch into → main branch → push to github -> GitHub Actions → EC2 Production
 
 
