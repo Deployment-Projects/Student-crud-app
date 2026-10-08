@@ -187,5 +187,10 @@ if we use npm run build then its production environment.
 When the production code will change
 Local Development → develop branch → Local testing (Docker Compose Dev)
 Production Release → merge develop branch into → main branch → push to github -> GitHub Actions → EC2 Production
+for merging code
+git checkout main
+git pull origin main
+git merge develop
+git push origin main
 
 
